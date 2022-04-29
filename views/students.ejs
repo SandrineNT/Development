@@ -1,0 +1,18 @@
+
+    <html>
+        <head>
+            <title>Students</title>
+            <link rel="stylesheet" href="/style.css">
+            <style> ul {background-color: yellows;}  </style>
+        </head>
+        <body>
+            <main>
+            <h1>Students</h1>
+            <ul>
+            <% students.forEach(function(student) { %>
+                <li><%= student.name %> | <%= student.school %></li>
+            <%})%>
+            </ul>
+            </main>
+        </body>
+    </html>
